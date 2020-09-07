@@ -1,0 +1,3 @@
+@foreach($subcategory as $subcategory)
+    <option value="{{$subcategory->id}}">{{$subcategory->name}}</option>
+@endforeach

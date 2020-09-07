@@ -1,0 +1,66 @@
+.sage-asked-content {
+    font-size: 13px;
+}
+.sage-asked-content * {
+    font-size: 13px;
+    color: #343434;
+    margin: 0;
+}
+.sage-asked-content a {
+    color: #9c4817;
+    font-weight: 600;
+    display: inline-block;
+}
+.sage-asked-content img {
+    max-height: 500px;
+    max-width: 100%;
+    width: auto;
+}
+.sage-asked-content h1,
+.sage-asked-content h2 {
+    color: #33495d;
+    border: none;
+    padding: 0px;
+}
+.sage-asked-content h1{
+    font-size: 24px;
+    line-height: 30px;
+}
+.sage-asked-content h2 {
+    font-size: 18px;
+    line-height: 25px;
+}
+.sage-asked-content p {
+    text-align: justify;
+    margin: 0;
+    line-height: 20px;
+    color: #343434;
+}
+.sage-asked-content pre {
+    background: #343434;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    white-space: break-spaces;
+    line-height: 22px;
+
+}
+.sage-asked-content ol,
+.sage-asked-content ul {
+    padding-left: 50px;
+}
+.sage-asked-content ol li {
+    list-style-type: decimal;
+    margin-bottom: 5px;
+}
+.sage-asked-content ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+.sage-asked-content blockquote {
+    quotes: "“" "”" "‘" "’";
+    color: #cecece !important;
+    background: transparent;
+    padding: 5px 10px;
+    font-style: initial;
+}

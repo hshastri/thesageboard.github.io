@@ -1,0 +1,2 @@
+[21-Apr-2020 09:38:58 America/Boise] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home3/sageappn/public_html/development/vendor/ramsey/uuid/src/functions.php on line 34
+[21-Apr-2020 09:38:59 America/Boise] PHP Parse error:  syntax error, unexpected '?', expecting variable (T_VARIABLE) in /home3/sageappn/public_html/development/vendor/ramsey/uuid/src/functions.php on line 34

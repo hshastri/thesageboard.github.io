@@ -1,0 +1,270 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 100%;
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+  display: block;
+}
+a {
+  color: #f9cd4a;
+  text-decoration: none;
+}
+a:hover {
+  color: #ffc107;
+  text-decoration: none;
+}
+.vertical-line {
+  display: block;
+  margin: auto;
+  width: 1px;
+  height: 100%;
+  background: #ededed;
+}
+
+.login-page-wrapper {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/knowledge-tree.png');
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: -webkit-linear-gradient(45deg, #00d773 54%, #76ec75 50%);
+  background: -moz-linear-gradient(45deg, #00d773 54%, #76ec75 50%);
+  background: -o-linear-gradient(45deg, #00d773 54%, #76ec75 50%);
+  background: linear-gradient(45deg, #00d773 54%, #76ec75 50%); */
+}
+.login-area {
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.middle-content {
+  width: 100%;
+  background: #272727bf;
+  border-radius: 10px;
+  margin: auto;
+}
+.logo {
+  width: 33%;
+  margin-bottom: 10px !important;
+}
+
+.social-login {
+  color: #ebebeb;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-weight: 600
+}
+.social-login:hover{
+  color: white;
+}
+.social-login.facebook {
+  background: #39579a;
+}
+.social-login.google {
+  background: #df4a32;
+}
+
+/**************** Sign In form *************/
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+::-moz-input-placeholder {
+  font-size: 14px;
+}
+::-o-input-placeholder {
+  font-size: 14px;
+}
+input.form-control.input100 {
+  border: none;
+}
+input[type="checkbox"] {
+  border: 1px solid white;
+  cursor: pointer;
+  margin: 0;
+  -webkit-appearance: none;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 3px;
+  display: inline-block;
+  height: 16px;
+  position: relative;
+  vertical-align: sub;
+  width: 16px !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+input[type=checkbox].sage-check-box:checked::before {
+  content: '\e800';
+  font-family: "fontello";
+  color: #00d773;
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 11px;
+  margin: -1px 0 0 -1px;
+}
+input[type=checkbox].sage-check-box:focus {
+  outline: none;
+}
+.submit-button {
+  padding: 6px 20px;
+  min-width: 100%;
+  background: #00df73;
+  outline: 0;
+  border: 0;
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 2px;
+  margin: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:focus {
+  outline: none;
+}
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 12px;
+  pointer-events: none;
+
+  font-family: Poppins-Regular;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 18px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+/********** Sweat alert *******/
+.swal2-popup .swal2-title {
+  font-size: 1.5em;
+}
+.swal2-popup .swal2-actions {
+  margin: .3em auto 0;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media (max-width: 576px) {
+  .middle-content {
+    padding: 30px 15px 10px !important;
+  }
+  .login-area h4 {
+    font-size: 16px;
+  }
+  .social-login {
+    padding: 6px 20px;
+    margin-top: 15px;
+    border-radius: 3px;
+  }
+  .login-area input.form-control {
+    height: 30px;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .middle-content {
+    width: 450px;
+  }
+  .login-area h4 {
+    font-size: 20px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .middle-content {
+    width: 580px;
+  }  
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .middle-content {
+    width: 600px;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
